@@ -305,6 +305,8 @@ static inline const char* evmc_revision_to_string(enum evmc_revision rev)
         return "Osaka";
     case EVMC_EXPERIMENTAL:
         return "Experimental";
+    case EVMC_MONAD:
+        return "Monad";
     }
     return "<unknown>";
 }

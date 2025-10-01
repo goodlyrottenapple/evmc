@@ -1053,6 +1053,8 @@ enum evmc_revision
      */
     EVMC_EXPERIMENTAL = 15,
 
+    EVMC_MONAD = 16,
+
     /** The maximum EVM revision supported. */
     EVMC_MAX_REVISION = EVMC_EXPERIMENTAL,
 
