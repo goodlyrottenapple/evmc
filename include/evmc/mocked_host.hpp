@@ -402,7 +402,7 @@ public:
     }
 
     /// Get transaction context (EVMC host method).
-    evmc_tx_context get_tx_context() const noexcept override { return tx_context; }
+    const evmc_tx_context* get_tx_context() const noexcept override { return &tx_context; }
 
     /// Get the block header hash (EVMC host method).
     bytes32 get_block_hash(int64_t block_number) const noexcept override

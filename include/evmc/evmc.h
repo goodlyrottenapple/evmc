@@ -245,7 +245,7 @@ struct evmc_host_context;
  *  @param      context  The pointer to the Host execution context.
  *  @return              The transaction context.
  */
-typedef struct evmc_tx_context (*evmc_get_tx_context_fn)(struct evmc_host_context* context);
+typedef const struct evmc_tx_context* (*evmc_get_tx_context_fn)(struct evmc_host_context* context);
 
 /**
  * Get block hash callback function.
